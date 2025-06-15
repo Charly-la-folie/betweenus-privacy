@@ -1,49 +1,406 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>Politique de confidentialité – Between Us</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Politique de confidentialité - Between Us</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.5;
+            color: #2c2c2c;
+            background: #f8f9fa;
+            font-size: 14px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        }
+
+        .header {
+            background: linear-gradient(135deg, #7B61FF 0%, #FF6AD5 100%);
+            color: white;
+            padding: 30px 40px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .header p {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .update-info {
+            background: #f1f3f4;
+            padding: 15px 20px;
+            border-left: 4px solid #7B61FF;
+            margin-bottom: 30px;
+            font-size: 13px;
+            color: #666;
+        }
+
+        h2 {
+            color: #1a1a1a;
+            font-size: 18px;
+            font-weight: 600;
+            margin: 30px 0 15px 0;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #7B61FF;
+        }
+
+        h3 {
+            color: #333;
+            font-size: 15px;
+            font-weight: 600;
+            margin: 20px 0 10px 0;
+        }
+
+        p {
+            margin-bottom: 10px;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        ul {
+            margin: 10px 0 15px 20px;
+            font-size: 14px;
+        }
+
+        li {
+            margin-bottom: 6px;
+            line-height: 1.5;
+        }
+
+        .section {
+            margin-bottom: 25px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #e9ecef;
+        }
+
+        .section:last-child {
+            border-bottom: none;
+        }
+
+        .contact-section {
+            background: #f8f9fa;
+            border: 1px solid #e9ecef;
+            padding: 20px;
+            margin: 25px 0;
+            text-align: center;
+        }
+
+        .contact-section h3 {
+            color: #1a1a1a;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        .email-link {
+            display: inline-block;
+            color: #7B61FF;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 8px 16px;
+            border: 1px solid #7B61FF;
+            border-radius: 4px;
+            transition: all 0.2s ease;
+            font-size: 14px;
+        }
+
+        .email-link:hover {
+            background: #7B61FF;
+            color: white;
+        }
+
+        .footer {
+            background: #2c2c2c;
+            color: #999;
+            padding: 20px 40px;
+            text-align: center;
+            font-size: 12px;
+        }
+
+        .highlight {
+            background: #f8f9fa;
+            border: 1px solid #e9ecef;
+            padding: 15px;
+            margin: 15px 0;
+            font-size: 13px;
+            border-left: 4px solid #FF8C42;
+        }
+
+        strong {
+            font-weight: 600;
+            color: #1a1a1a;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 0;
+            }
+            
+            .header, .content, .footer {
+                padding: 20px;
+            }
+            
+            body {
+                font-size: 13px;
+            }
+            
+            h2 {
+                font-size: 16px;
+            }
+            
+            h3 {
+                font-size: 14px;
+            }
+        }
+
+        @media print {
+            body {
+                background: white;
+                font-size: 12px;
+            }
+            
+            .container {
+                box-shadow: none;
+                max-width: none;
+            }
+            
+            .header {
+                background: #7B61FF !important;
+                -webkit-print-color-adjust: exact;
+            }
+        }
+    </style>
 </head>
 <body>
-  <h1>Politique de confidentialité</h1>
-  <p><strong>Date de mise à jour :</strong> 22 avril 2025</p>
+    <div class="container">
+        <header class="header">
+            <h1>Politique de confidentialité</h1>
+            <p>Between Us</p>
+        </header>
 
-  <p>Bienvenue sur <strong>Between Us</strong>, une application développée pour simplifier les rencontres entre amis.</p>
+        <div class="content">
+            <div class="update-info">
+                <strong>Date de mise à jour :</strong> 14 juin 2025
+            </div>
 
-  <h2>1. Données collectées</h2>
-  <ul>
-    <li><strong>Comptes Google :</strong> si vous choisissez de vous connecter, nous collectons votre prénom, adresse email et photo de profil via Firebase Authentication.</li>
-    <li><strong>Invités non connectés :</strong> nous vous demandons uniquement un prénom et une adresse pour calculer le lieu optimal de rencontre.</li>
-  </ul>
+            <p>Bienvenue sur <strong>Between Us</strong>, une application développée pour simplifier les rencontres entre amis. Cette politique vous informe sur la façon dont nous collectons, utilisons et protégeons vos données personnelles.</p>
 
-  <h2>2. Utilisation des données</h2>
-  <p>Les données collectées servent uniquement à :</p>
-  <ul>
-    <li>Identifier les participants à un événement</li>
-    <li>Calculer un lieu de rencontre optimal</li>
-    <li>Améliorer l’expérience utilisateur</li>
-  </ul>
+            <div class="section">
+                <h2>1. Données collectées</h2>
+                
+                <h3>1.1 Comptes utilisateurs</h3>
+                <ul>
+                    <li><strong>Comptes Google :</strong> si vous choisissez de vous connecter, nous collectons votre prénom, adresse email et photo de profil via Firebase Authentication.</li>
+                    <li><strong>Invités non connectés :</strong> nous vous demandons uniquement un prénom et une adresse pour calculer le lieu optimal de rencontre.</li>
+                </ul>
 
-  <p>Nous n’utilisons vos données à aucune autre fin, et ne les partageons pas avec des tiers à des fins commerciales.</p>
+                <h3>1.2 Données de géolocalisation</h3>
+                <ul>
+                    <li><strong>Adresses saisies :</strong> pour calculer les lieux de rencontre optimaux via notre service de géolocalisation Geoapify</li>
+                    <li><strong>Localisation approximative :</strong> pour améliorer la recherche d'établissements à proximité</li>
+                </ul>
 
-  <h2>3. Stockage</h2>
-  <p>Les données sont hébergées de manière sécurisée via Firebase (Google Cloud Platform), dans l’UE ou aux États-Unis selon les régions configurées.</p>
+                <h3>1.3 Données publicitaires et de suivi</h3>
+                <ul>
+                    <li><strong>Identifiant publicitaire (IDFA/GAID) :</strong> collecté après votre consentement pour la personnalisation des publicités</li>
+                    <li><strong>Données de navigation :</strong> pages consultées, interactions avec les publicités, durée d'utilisation</li>
+                    <li><strong>Cookies publicitaires :</strong> placés par Google AdMob pour le ciblage publicitaire</li>
+                </ul>
 
-  <h2>4. Droits des utilisateurs</h2>
-  <p>Conformément au RGPD, vous avez le droit de :</p>
-  <ul>
-    <li>Demander l’accès, la modification ou la suppression de vos données</li>
-    <li>Retirer votre consentement à tout moment</li>
-  </ul>
+                <h3>1.4 Données d'utilisation</h3>
+                <ul>
+                    <li><strong>Événements créés :</strong> informations sur vos événements (nom, description, date, préférences)</li>
+                    <li><strong>Recherches effectuées :</strong> historique des recherches d'établissements</li>
+                    <li><strong>Interactions :</strong> clics, partages, évaluations d'établissements</li>
+                </ul>
+            </div>
 
-  <p>Pour exercer vos droits, merci de nous contacter à l’adresse suivante : <a href="mailto:between.us.apps@gmail.com">between.us.apps@gmail.com</a>.</p>
+            <div class="section">
+                <h2>2. Utilisation des données</h2>
+                
+                <h3>2.1 Fonctionnalités principales</h3>
+                <p>Les données collectées servent à :</p>
+                <ul>
+                    <li>Identifier les participants à un événement</li>
+                    <li>Calculer un lieu de rencontre optimal</li>
+                    <li>Rechercher et recommander des établissements (bars, restaurants, cafés)</li>
+                    <li>Améliorer l'expérience utilisateur</li>
+                </ul>
 
-  <h2>5. Sécurité</h2>
-  <p>Nous mettons en œuvre des mesures de sécurité standards (authentification sécurisée, règles Firestore, etc.) pour protéger vos données.</p>
+                <h3>2.2 Publicités personnalisées</h3>
+                <ul>
+                    <li>Affichage de publicités ciblées via Google AdMob</li>
+                    <li>Mesure de l'efficacité publicitaire</li>
+                    <li>Optimisation du contenu publicitaire selon vos centres d'intérêt</li>
+                </ul>
 
-  <h2>6. Évolutions</h2>
-  <p>Nous nous réservons le droit de mettre à jour cette politique. Vous serez notifié en cas de changement majeur.</p>
+                <h3>2.3 Services tiers intégrés</h3>
+                <ul>
+                    <li><strong>Google AdMob :</strong> pour l'affichage et la gestion des publicités</li>
+                    <li><strong>Geoapify :</strong> pour les services de cartographie et géolocalisation</li>
+                    <li><strong>Firebase/Google Cloud :</strong> pour l'hébergement et l'authentification</li>
+                </ul>
+            </div>
 
-  <p>Merci d’utiliser Between Us 🧡</p>
+            <div class="section">
+                <h2>3. Partage des données</h2>
+                
+                <h3>3.1 Partenaires technologiques</h3>
+                <p>Nous partageons certaines données avec nos partenaires techniques :</p>
+                <ul>
+                    <li><strong>Google (AdMob, Firebase, Cloud Platform) :</strong> pour les services publicitaires et d'infrastructure</li>
+                    <li><strong>Geoapify :</strong> pour les services de géolocalisation et cartographie</li>
+                </ul>
+
+                <h3>3.2 Données anonymisées</h3>
+                <p>Nous pouvons partager des données agrégées et anonymisées à des fins d'analyse et d'amélioration du service.</p>
+
+                <h3>3.3 Obligations légales</h3>
+                <p>Nous pouvons divulguer vos données si requis par la loi ou pour protéger nos droits.</p>
+            </div>
+
+            <div class="section">
+                <h2>4. Stockage et conservation</h2>
+                
+                <h3>4.1 Localisation</h3>
+                <p>Les données sont hébergées de manière sécurisée via :</p>
+                <ul>
+                    <li><strong>Firebase (Google Cloud Platform) :</strong> dans l'UE ou aux États-Unis selon les régions configurées</li>
+                    <li><strong>Serveurs dédiés :</strong> hébergés en France (91.134.68.63:3000) pour certaines fonctionnalités</li>
+                </ul>
+
+                <h3>4.2 Durée de conservation</h3>
+                <ul>
+                    <li><strong>Comptes actifs :</strong> conservation pendant la durée d'utilisation du service</li>
+                    <li><strong>Comptes inactifs :</strong> suppression après 24 mois d'inactivité</li>
+                    <li><strong>Données publicitaires :</strong> conservation selon les politiques Google AdMob (généralement 24 mois)</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>5. Vos droits (RGPD)</h2>
+                
+                <p>Conformément au RGPD, vous disposez des droits suivants :</p>
+
+                <h3>5.1 Droits d'accès et de rectification</h3>
+                <ul>
+                    <li>Consulter les données personnelles que nous détenons</li>
+                    <li>Demander la correction de données inexactes</li>
+                </ul>
+
+                <h3>5.2 Droit à l'effacement</h3>
+                <ul>
+                    <li>Supprimer votre compte et toutes les données associées</li>
+                    <li>Effacement automatique en cas d'inactivité prolongée</li>
+                </ul>
+
+                <h3>5.3 Droit à la portabilité</h3>
+                <ul>
+                    <li>Récupérer vos données dans un format structuré</li>
+                </ul>
+
+                <h3>5.4 Droit d'opposition</h3>
+                <ul>
+                    <li>Refuser le traitement à des fins de marketing direct</li>
+                    <li>S'opposer au profilage publicitaire</li>
+                </ul>
+
+                <h3>5.5 Gestion du consentement publicitaire</h3>
+                <ul>
+                    <li>Modifier vos préférences publicitaires dans les paramètres de l'application</li>
+                    <li>Réinitialiser votre consentement à tout moment</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>6. Sécurité</h2>
+                
+                <p>Nous mettons en œuvre des mesures de sécurité techniques et organisationnelles :</p>
+                <ul>
+                    <li>Authentification sécurisée via Firebase</li>
+                    <li>Chiffrement des données en transit et au repos</li>
+                    <li>Règles d'accès strictes sur nos bases de données Firestore</li>
+                    <li>Surveillance et audit réguliers de nos systèmes</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>7. Cookies et technologies similaires</h2>
+                
+                <h3>7.1 Types de cookies utilisés</h3>
+                <ul>
+                    <li><strong>Cookies fonctionnels :</strong> nécessaires au fonctionnement de l'application</li>
+                    <li><strong>Cookies publicitaires :</strong> placés par Google AdMob pour la personnalisation</li>
+                    <li><strong>Cookies d'analyse :</strong> pour mesurer l'usage et améliorer le service</li>
+                </ul>
+
+                <h3>7.2 Gestion des cookies</h3>
+                <p>Vous pouvez gérer vos préférences cookies via :</p>
+                <ul>
+                    <li>Les paramètres de votre appareil</li>
+                    <li>Le formulaire de consentement de l'application</li>
+                    <li>Les paramètres de votre compte Google</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>8. Transferts internationaux</h2>
+                
+                <p>Certaines de vos données peuvent être transférées vers :</p>
+                <ul>
+                    <li><strong>États-Unis :</strong> via les services Google (Firebase, AdMob) avec des garanties de protection adequates</li>
+                    <li><strong>Union Européenne :</strong> pour nos serveurs principaux</li>
+                </ul>
+                <p>Ces transferts respectent les mécanismes de protection prévus par le RGPD.</p>
+            </div>
+
+            <div class="section">
+                <h2>9. Mineurs</h2>
+                
+                <p>Notre service n'est pas destiné aux mineurs de moins de 16 ans. Nous ne collectons pas sciemment de données personnelles d'enfants de moins de 16 ans.</p>
+            </div>
+
+            <div class="contact-section">
+                <h3>10. Contact</h3>
+                <p>Pour toute question relative à cette politique ou pour exercer vos droits :</p>
+                <a href="mailto:between.us.apps@gmail.com" class="email-link">between.us.apps@gmail.com</a>
+            </div>
+
+            <div class="section">
+                <h2>11. Évolutions</h2>
+                
+                <p>Nous nous réservons le droit de mettre à jour cette politique. En cas de changement majeur, vous serez notifié par email aux utilisateurs connectés avec mise à jour de la date en haut de ce document.</p>
+                
+                <div class="highlight">
+                    <strong>Dernière révision majeure :</strong> Ajout des sections relatives aux publicités, géolocalisation et partenaires techniques.
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p>© 2025 MALF-BetweenUs - Tous droits réservés</p>
+        </footer>
+    </div>
 </body>
 </html>
